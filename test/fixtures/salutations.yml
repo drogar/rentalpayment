@@ -1,0 +1,16 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  salutation: Mr.
+  language: en
+  display_order: 1
+
+two:
+  salutation: MyString
+  language: MyString
+  display_order: 2
+
+three:
+    salutation: MyString
+    language: MyString
+    display_order: 3

@@ -1,0 +1,27 @@
+<h1>Listing salutations</h1>
+
+<table>
+  <tr>
+    <th>Salutation</th>
+    <th>Language</th>
+    <th>Display order</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @salutations.each do |salutation| %>
+  <tr>
+    <td><%= salutation.salutation %></td>
+    <td><%= salutation.language %></td>
+    <td><%= salutation.display_order %></td>
+    <td><%= link_to 'Show', salutation %></td>
+    <td><%= link_to 'Edit', edit_salutation_path(salutation) %></td>
+    <td><%= link_to 'Destroy', salutation, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Salutation', new_salutation_path %>

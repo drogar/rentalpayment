@@ -1,0 +1,29 @@
+<%= form_for(@salutation) do |f| %>
+  <% if @salutation.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@salutation.errors.count, "error") %> prohibited this salutation from being saved:</h2>
+
+      <ul>
+      <% @salutation.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :salutation %><br />
+    <%= f.text_field :salutation %>
+  </div>
+  <div class="field">
+    <%= f.label :language %><br />
+    <%= f.text_field :language %>
+  </div>
+  <div class="field">
+    <%= f.label :display_order %><br />
+    <%= f.number_field :display_order %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

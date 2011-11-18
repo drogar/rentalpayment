@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  email: someone@example.com
+  first_name: MyString
+  last_name: MyString
+  middle_name: MyString
+  salutation: one
+  apartment_number: MyString
+  address_line_1: MyString
+  address_line_2: MyString
+  city: MyString
+  province_or_state: Alberta
+  country: Canada
+  postal_code: MyString
+
+two:
+  email: someone.else@example.com
+  first_name: MyString
+  last_name: MyString
+  middle_name: MyString
+  salutation: two
+  apartment_number: MyString
+  address_line_1: MyString
+  address_line_2: MyString
+  city: MyString
+  province_or_state: Washington
+  country: U.S.A.
+  postal_code: MyString

@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Salutation:</b>
+  <%= @salutation.salutation %>
+</p>
+
+<p>
+  <b>Language:</b>
+  <%= @salutation.language %>
+</p>
+
+<p>
+  <b>Display order:</b>
+  <%= @salutation.display_order %>
+</p>
+
+
+<%= link_to 'Edit', edit_salutation_path(@salutation) %> |
+<%= link_to 'Back', salutations_path %>
