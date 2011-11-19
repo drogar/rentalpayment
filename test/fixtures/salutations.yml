@@ -7,10 +7,15 @@ one:
 
 two:
   salutation: MyString
-  language: MyString
+  language: fr
   display_order: 2
 
 three:
     salutation: MyString
-    language: MyString
+    language: es
     display_order: 3
+
+four:
+    salutation: MyString
+    language: es
+    display_order: 4

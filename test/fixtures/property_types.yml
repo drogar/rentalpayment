@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  property_type: typeone
+  description: MyString
+  display_order: 1
+
+two:
+  property_type: typetwo
+  description: MyString
+  display_order: 2
