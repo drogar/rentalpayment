@@ -1,4 +1,6 @@
 Rentalpayment::Application.routes.draw do
+  resources :roles
+
   devise_for :users
 
   resources :property_types
