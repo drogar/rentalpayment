@@ -1,4 +1,5 @@
 class SalutationsController < ApplicationController
+  before_filter :authenticate_user!
   # GET /salutations
   # GET /salutations.json
   def index
