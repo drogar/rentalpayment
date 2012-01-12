@@ -1,5 +1,5 @@
 class PropertyTypesController < ApplicationController
-  before_filter :authenticate_user!
+ 
   # GET /property_types
   # GET /property_types.json
   def index

@@ -1,6 +1,10 @@
 require 'test_helper'
 
 class SalutationsControllerTest < ActionController::TestCase
+
+  setup :login_as_admin
+  setup :set_referrer_to_slash
+
   setup do
     @salutation = salutations(:one)
     @sal3 = salutations(:three)

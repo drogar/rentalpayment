@@ -1,6 +1,10 @@
 require 'test_helper'
 
 class PeopleControllerTest < ActionController::TestCase
+
+  setup :login_as_admin
+  setup :set_referrer_to_slash
+  
   setup do
     @person = people(:one)
   end

@@ -1,8 +1,12 @@
 require 'test_helper'
 
 class RolesControllerTest < ActionController::TestCase
+
+  setup :login_as_admin
+  setup :set_referrer_to_slash
+
   setup do
-    @role = roles(:one)
+    @role = roles(:admin)
   end
 
   test "should get index" do

@@ -1,6 +1,11 @@
 require 'test_helper'
 
 class PropertyTypesControllerTest < ActionController::TestCase
+
+
+  setup :login_as_admin
+  setup :set_referrer_to_slash
+
   setup do
     @property_type = property_types(:one)
   end
