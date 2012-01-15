@@ -1,9 +1,9 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
-one:
-  resource: MyString
-  operation: MyString
+readRights:
+  resource: rights
+  operation: READ
 
-two:
-  resource: MyString
-  operation: MyString
+updateRights:
+  resource: rights
+  operation: UPDATE

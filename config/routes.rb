@@ -8,6 +8,8 @@ Rentalpayment::Application.routes.draw do
   resources :salutations
 
   resources :people
+  
+  resources :rights
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
