@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  property_name: MyString
+  description: MyText
+  address_line_1: MyString
+  address_line_2: MyString
+  city: MyString
+  province_or_state: Alberta
+  country: CA
+  postal_code: MyString
+  number_of_units: 1
+  person_id: 1
+  property_type: house
+
+two:
+  property_name: MyString
+  description: MyText
+  address_line_1: MyString
+  address_line_2: MyString
+  city: MyString
+  province_or_state: Alberta
+  country: CA
+  postal_code: MyString
+  number_of_units: 10
+  person_id: 1
+  property_type: apartment

@@ -1,6 +1,6 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
-one:
+admin:
   email: someone@example.com
   first_name: MyString
   last_name: MyString
@@ -14,7 +14,7 @@ one:
   country: Canada
   postal_code: MyString
 
-two:
+landlordP1:
   email: someone.else@example.com
   first_name: MyString
   last_name: MyString
@@ -27,3 +27,18 @@ two:
   province_or_state: Washington
   country: U.S.A.
   postal_code: MyString
+  
+landlordP2:
+  email: someone.else2@example.com
+  first_name: MyString
+  last_name: MyString
+  middle_name: MyString
+  salutation: two
+  apartment_number: MyString
+  address_line_1: MyString
+  address_line_2: MyString
+  city: MyString
+  province_or_state: Washington
+  country: U.S.A.
+  postal_code: MyString
+

@@ -6,7 +6,7 @@ class PeopleControllerTest < ActionController::TestCase
   setup :set_referrer_to_slash
   
   setup do
-    @person = people(:one)
+    @person = people(:landlordP1)
   end
 
   test "should get index" do

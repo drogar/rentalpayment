@@ -15,4 +15,6 @@ class Person < ActiveRecord::Base
   
   validates :email, email:  true
   
+  has_many :properties
+  
 end

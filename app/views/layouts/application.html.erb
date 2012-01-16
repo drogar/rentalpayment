@@ -15,8 +15,24 @@
   <div id='side'>
     <ul>
       <li><a href="/">Home</a></li>
-      <li><a href="/reports">Reports</a></li>
-      <li><a href="/...">...</a></li>
+      <% if current_user.has_role?("Admin")%>
+      <li class='menuheader'>Admin Functions
+      <ul>
+        <li><%= link_to 'People', Person %></li>
+        <li><%= link_to 'Salutations', Salutation %></li>
+       <!-- <li>< link_to 'Assignments', Assignment ></li> -->
+        <li><%= link_to 'Property Types', PropertyType %></li>
+      </ul>
+      </li>
+      <% end%>
+      <% if current_user.has_role?("Landlord")%>
+      <li class='menuheader'>Landlords:
+      <ul>
+        <li><%= link_to 'My Info', Person.find_by_email(current_user.email) %></li>
+     <!--   <li>< link_to 'Properties', Property ></li>
+        <li>< link_to 'Leases', Lease ></li> -->
+      </ul></li>
+      <% end%>
     </ul>
   </div>  
   <div id='main'> 

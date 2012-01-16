@@ -7,7 +7,7 @@ class PropertyTypesControllerTest < ActionController::TestCase
   setup :set_referrer_to_slash
 
   setup do
-    @property_type = property_types(:one)
+    @property_type = property_types(:apartment)
   end
 
   test "should get index" do

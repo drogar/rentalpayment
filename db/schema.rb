@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120101185502) do
+ActiveRecord::Schema.define(:version => 20120116190956) do
 
   create_table "assignments", :force => true do |t|
     t.integer  "user_id"
@@ -42,6 +42,22 @@ ActiveRecord::Schema.define(:version => 20120101185502) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "salutation_id"
+  end
+
+  create_table "properties", :force => true do |t|
+    t.string   "property_name"
+    t.text     "description"
+    t.string   "address_line_1"
+    t.string   "address_line_2"
+    t.string   "city"
+    t.string   "province_or_state"
+    t.string   "country"
+    t.string   "postal_code"
+    t.integer  "number_of_units"
+    t.integer  "person_id"
+    t.integer  "property_type_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "property_types", :force => true do |t|

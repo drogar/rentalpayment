@@ -38,4 +38,18 @@ class UserTest < ActiveSupport::TestCase
      assert user.errors[:email].empty?, "#{eml} should not be an invalid email: #{user.errors[:email]}"
    end
   end
+  
+  test "Admin has all roles" do
+    adm = users(:admin)
+    assert adm.has_role?("Administrator");
+    assert adm.has_role?("whatever");
+  end
+  
+  test "Landlord has landlord role and no other" do
+    llord = users(:landlord)
+    assert llord.has_role? "Landlord"
+    assert (not llord.has_role? "Supports")
+  end
  end
+ 
+ 

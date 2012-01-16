@@ -13,4 +13,8 @@ class User < ActiveRecord::Base
   def can?(action, resource)
     roles.includes(:rights).for(action, resource).any? or roles.one? {|rl| rl.admin?}
   end
+  
+  def has_role?(rolename)
+    roles.one? {|rl| rl.admin? or rl.role_name == rolename}
+  end
 end

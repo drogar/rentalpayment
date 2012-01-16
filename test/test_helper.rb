@@ -25,7 +25,7 @@ class ActiveSupport::TestCase
     sign_in(users(:landlord))
   end
   
-  def login_as_landlord
+  def login_as_support
     sign_in(users(:support))
   end
   

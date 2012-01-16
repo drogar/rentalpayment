@@ -1,11 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
-one:
-  property_type: typeone
+apartment:
+  property_type: Apartment
   description: MyString
   display_order: 1
 
-two:
-  property_type: typetwo
+house:
+  property_type: House
   description: MyString
   display_order: 2
