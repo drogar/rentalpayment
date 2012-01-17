@@ -15,7 +15,7 @@
 <% @people.each do |person| %>
   <tr>
     <td><%= person.email %></td>
-    <td><%= person.salutation.salutation %> <%= person.first_name %> <%= person.last_name %></td>
+    <td><%= person.salutation.salutation %> <%= person.display_name %></td>
     <td><%= person.city %></td>
     <td><%= person.province_or_state %></td>
     <td><%= person.postal_code %></td>

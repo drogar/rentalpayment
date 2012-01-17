@@ -10,7 +10,7 @@ one:
   country: CA
   postal_code: MyString
   number_of_units: 1
-  person_id: 1
+  person: landlordP1
   property_type: house
 
 two:
@@ -23,5 +23,5 @@ two:
   country: CA
   postal_code: MyString
   number_of_units: 10
-  person_id: 1
+  person: landlordP2
   property_type: apartment

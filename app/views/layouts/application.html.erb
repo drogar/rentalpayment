@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Rentalpayment</title>
+  <title>Rental Payment</title>
   <%= stylesheet_link_tag    "application" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
@@ -29,8 +29,8 @@
       <li class='menuheader'>Landlords:
       <ul>
         <li><%= link_to 'My Info', Person.find_by_email(current_user.email) %></li>
-     <!--   <li>< link_to 'Properties', Property ></li>
-        <li>< link_to 'Leases', Lease ></li> -->
+        <li><%= link_to 'Properties', Property %></li>
+        <!-- <li>< link_to 'Leases', Lease ></li> -->
       </ul></li>
       <% end%>
     </ul>

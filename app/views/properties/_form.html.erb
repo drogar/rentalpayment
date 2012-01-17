@@ -48,8 +48,12 @@
     <%= f.number_field :number_of_units %>
   </div>
   <div class="field">
+    <%= f.label :property_type_id %><br />
+    <%= f.select :property_type_id, PropertyType.all.collect {|pt| [pt.property_type, pt.id]} %>
+  </div>
+  <div class="field">
     <%= f.label :person_id %><br />
-    <%= f.number_field :person_id %>
+    <%= f.select :person_id, Person.all.collect {|p| [p.display_name, p.id]} %>
   </div>
   <div class="actions">
     <%= f.submit %>

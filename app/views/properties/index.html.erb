@@ -4,14 +4,10 @@
   <tr>
     <th>Property name</th>
     <th>Description</th>
-    <th>Address line 1</th>
-    <th>Address line 2</th>
-    <th>City</th>
-    <th>Province or state</th>
-    <th>Country</th>
-    <th>Postal code</th>
+    <th>Address</th>
     <th>Number of units</th>
-    <th>Person</th>
+    <th>Type</th>
+    <th>Owner</th>
     <th></th>
     <th></th>
     <th></th>
@@ -21,14 +17,10 @@
   <tr>
     <td><%= property.property_name %></td>
     <td><%= property.description %></td>
-    <td><%= property.address_line_1 %></td>
-    <td><%= property.address_line_2 %></td>
-    <td><%= property.city %></td>
-    <td><%= property.province_or_state %></td>
-    <td><%= property.country %></td>
-    <td><%= property.postal_code %></td>
+    <td><%= render  :partial => "shared/formatted_address", :locals => {:address=>property} %></td>
     <td><%= property.number_of_units %></td>
-    <td><%= property.person_id %></td>
+    <td><%= property.property_type.property_type%></td>
+    <td><%= property.person.display_name%></td>
     <td><%= link_to 'Show', property %></td>
     <td><%= link_to 'Edit', edit_property_path(property) %></td>
     <td><%= link_to 'Destroy', property, confirm: 'Are you sure?', method: :delete %></td>
