@@ -9,6 +9,8 @@ gem 'devise', '~> 1.5.1'
 
 gem 'sqlite3'
 
+# factories, not fixtures
+gem 'factory_girl_rails'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -31,6 +33,18 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
+
+group :test, :development do
+  #specs
+  gem "rspec-rails"
+end
+
+group :test do
+  # acceptance testing
+  gem 'capybara'
+  gem 'database_cleaner'
+  gem 'cucumber-rails'
+end
 
 group :test do
   # Pretty printed test output
