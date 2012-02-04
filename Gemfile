@@ -39,7 +39,7 @@ group :test, :development do
   gem "rspec-rails"
 end
 
-group :test do
+group :test, :development do
   # acceptance testing
   gem 'capybara'
   gem 'database_cleaner'

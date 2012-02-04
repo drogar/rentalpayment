@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>app/views/shared/_formatted_address.html.erb</string>
+	<string>features/step_definitions/access_is_controlled_by_login.rb</string>
 	<key>documents</key>
 	<array>
 		<dict>
@@ -35,19 +35,49 @@
 			<key>firstVisibleLine</key>
 			<integer>1</integer>
 		</dict>
-		<key>app/controllers/people_controller.rb</key>
+		<key>app/controllers/application_controller.rb</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>2</integer>
+				<integer>27</integer>
 				<key>line</key>
-				<integer>1</integer>
+				<integer>3</integer>
+			</dict>
+			<key>columnSelection</key>
+			<false/>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+			<key>selectFrom</key>
+			<dict>
+				<key>column</key>
+				<integer>16</integer>
+				<key>line</key>
+				<integer>2</integer>
+			</dict>
+			<key>selectTo</key>
+			<dict>
+				<key>column</key>
+				<integer>27</integer>
+				<key>line</key>
+				<integer>3</integer>
+			</dict>
+		</dict>
+		<key>app/controllers/home_controller.rb</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>22</integer>
+				<key>line</key>
+				<integer>2</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>15</integer>
+			<integer>0</integer>
 		</dict>
 		<key>app/controllers/property_types_controller.rb</key>
 		<dict>
@@ -99,6 +129,34 @@
 				<integer>38</integer>
 				<key>line</key>
 				<integer>6</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
+		<key>app/views/home/index.html.erb</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>27</integer>
+				<key>line</key>
+				<integer>6</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
+		<key>app/views/layouts/application.html.erb</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>25</integer>
+				<key>line</key>
+				<integer>17</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
@@ -305,20 +363,6 @@
 				<integer>15</integer>
 			</dict>
 		</dict>
-		<key>app/views/shared/_formatted_address.html.erb</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>52</integer>
-				<key>line</key>
-				<integer>3</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
-		</dict>
 		<key>config.ru</key>
 		<dict>
 			<key>caret</key>
@@ -333,19 +377,33 @@
 			<key>firstVisibleLine</key>
 			<integer>0</integer>
 		</dict>
-		<key>config/routes.rb</key>
+		<key>config/cucumber.yml</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>19</integer>
+				<integer>0</integer>
 				<key>line</key>
-				<integer>11</integer>
+				<integer>0</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
 			<integer>0</integer>
+		</dict>
+		<key>config/initializers/devise.rb</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>49</integer>
+				<key>line</key>
+				<integer>193</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>148</integer>
 		</dict>
 		<key>db/migrate/20111119005153_create_property_types.rb</key>
 		<dict>
@@ -475,6 +533,34 @@
 			<key>firstVisibleLine</key>
 			<integer>0</integer>
 		</dict>
+		<key>features/access_is_controlled_by_login.feature</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>28</integer>
+				<key>line</key>
+				<integer>23</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
+		<key>features/step_definitions/access_is_controlled_by_login.rb</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>28</integer>
+				<key>line</key>
+				<integer>31</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
 		<key>lib/validators/email_validator.rb</key>
 		<dict>
 			<key>caret</key>
@@ -511,6 +597,20 @@
 				<integer>0</integer>
 				<key>line</key>
 				<integer>0</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
+		<key>spec/spec_helper.rb</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>33</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
@@ -657,6 +757,20 @@
 			<key>firstVisibleLine</key>
 			<integer>0</integer>
 		</dict>
+		<key>test/performance/browsing_test.rb</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>0</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
 		<key>test/unit/assignments_test.rb</key>
 		<dict>
 			<key>caret</key>
@@ -697,7 +811,7 @@
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>38</integer>
+			<integer>0</integer>
 		</dict>
 		<key>test/unit/property_type_test.rb</key>
 		<dict>
@@ -788,15 +902,24 @@
 	</dict>
 	<key>openDocuments</key>
 	<array>
-		<string>test/functional/people_controller_test.rb</string>
-		<string>test/functional/properties_controller_test.rb</string>
-		<string>test/fixtures/property_types.yml</string>
-		<string>app/views/shared/_formatted_address.html.erb</string>
+		<string>features/access_is_controlled_by_login.feature</string>
+		<string>app/controllers/home_controller.rb</string>
+		<string>app/views/home/index.html.erb</string>
+		<string>features/step_definitions/access_is_controlled_by_login.rb</string>
+		<string>app/views/layouts/application.html.erb</string>
+		<string>app/controllers/application_controller.rb</string>
+		<string>config/cucumber.yml</string>
+		<string>spec/spec_helper.rb</string>
+		<string>config/initializers/devise.rb</string>
+		<string>test/unit/assignments_test.rb</string>
+		<string>test/unit/grant_test.rb</string>
+		<string>test/unit/person_test.rb</string>
+		<string>test/performance/browsing_test.rb</string>
 		<string>app/views/properties/index.html.erb</string>
 	</array>
 	<key>showFileHierarchyDrawer</key>
 	<true/>
 	<key>windowFrame</key>
-	<string>{{1264, 244}, {1143, 1174}}</string>
+	<string>{{678, 171}, {1143, 983}}</string>
 </dict>
 </plist>
