@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>features/step_definitions/access_is_controlled_by_login.rb</string>
+	<string>db/seeds.rb</string>
 	<key>documents</key>
 	<array>
 		<dict>
@@ -906,6 +906,7 @@
 		<string>app/controllers/home_controller.rb</string>
 		<string>app/views/home/index.html.erb</string>
 		<string>features/step_definitions/access_is_controlled_by_login.rb</string>
+		<string>db/seeds.rb</string>
 		<string>app/views/layouts/application.html.erb</string>
 		<string>app/controllers/application_controller.rb</string>
 		<string>config/cucumber.yml</string>
@@ -920,6 +921,6 @@
 	<key>showFileHierarchyDrawer</key>
 	<true/>
 	<key>windowFrame</key>
-	<string>{{678, 171}, {1143, 983}}</string>
+	<string>{{944, 42}, {1143, 983}}</string>
 </dict>
 </plist>
