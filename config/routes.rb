@@ -1,4 +1,6 @@
 Rentalpayment::Application.routes.draw do
+  resources :leases
+
   resources :properties
 
   resources :roles

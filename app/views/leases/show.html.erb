@@ -1,0 +1,55 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Property:</b>
+  <%= @lease.property_id %>
+</p>
+
+<p>
+  <b>Person:</b>
+  <%= @lease.person_id %>
+</p>
+
+<p>
+  <b>Lease start:</b>
+  <%= @lease.lease_start %>
+</p>
+
+<p>
+  <b>Lease end:</b>
+  <%= @lease.lease_end %>
+</p>
+
+<p>
+  <b>Renewal terms:</b>
+  <%= @lease.renewal_terms %>
+</p>
+
+<p>
+  <b>Payment amount:</b>
+  <%= @lease.payment_amount %>
+</p>
+
+<p>
+  <b>Payment frequency:</b>
+  <%= @lease.payment_frequency %>
+</p>
+
+<p>
+  <b>Payment due on:</b>
+  <%= @lease.payment_due_on %>
+</p>
+
+<p>
+  <b>Damage deposit:</b>
+  <%= @lease.damage_deposit_id %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%= @lease.status %>
+</p>
+
+
+<%= link_to 'Edit', edit_lease_path(@lease) %> |
+<%= link_to 'Back', leases_path %>

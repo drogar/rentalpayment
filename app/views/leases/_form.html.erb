@@ -1,0 +1,57 @@
+<%= form_for(@lease) do |f| %>
+  <% if @lease.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@lease.errors.count, "error") %> prohibited this lease from being saved:</h2>
+
+      <ul>
+      <% @lease.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :property_id %><br />
+    <%= f.number_field :property_id %>
+  </div>
+  <div class="field">
+    <%= f.label :person_id %><br />
+    <%= f.number_field :person_id %>
+  </div>
+  <div class="field">
+    <%= f.label :lease_start %><br />
+    <%= f.date_select :lease_start %>
+  </div>
+  <div class="field">
+    <%= f.label :lease_end %><br />
+    <%= f.date_select :lease_end %>
+  </div>
+  <div class="field">
+    <%= f.label :renewal_terms %><br />
+    <%= f.text_field :renewal_terms %>
+  </div>
+  <div class="field">
+    <%= f.label :payment_amount %><br />
+    <%= f.text_field :payment_amount %>
+  </div>
+  <div class="field">
+    <%= f.label :payment_frequency %><br />
+    <%= f.text_field :payment_frequency %>
+  </div>
+  <div class="field">
+    <%= f.label :payment_due_on %><br />
+    <%= f.text_field :payment_due_on %>
+  </div>
+  <div class="field">
+    <%= f.label :damage_deposit_id %><br />
+    <%= f.number_field :damage_deposit_id %>
+  </div>
+  <div class="field">
+    <%= f.label :status %><br />
+    <%= f.text_field :status %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

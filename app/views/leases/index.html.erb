@@ -1,0 +1,41 @@
+<h1>Listing leases</h1>
+
+<table>
+  <tr>
+    <th>Property</th>
+    <th>Person</th>
+    <th>Lease start</th>
+    <th>Lease end</th>
+    <th>Renewal terms</th>
+    <th>Payment amount</th>
+    <th>Payment frequency</th>
+    <th>Payment due on</th>
+    <th>Damage deposit</th>
+    <th>Status</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @leases.each do |lease| %>
+  <tr>
+    <td><%= lease.property_id %></td>
+    <td><%= lease.person_id %></td>
+    <td><%= lease.lease_start %></td>
+    <td><%= lease.lease_end %></td>
+    <td><%= lease.renewal_terms %></td>
+    <td><%= lease.payment_amount %></td>
+    <td><%= lease.payment_frequency %></td>
+    <td><%= lease.payment_due_on %></td>
+    <td><%= lease.damage_deposit_id %></td>
+    <td><%= lease.status %></td>
+    <td><%= link_to 'Show', lease %></td>
+    <td><%= link_to 'Edit', edit_lease_path(lease) %></td>
+    <td><%= link_to 'Destroy', lease, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Lease', new_lease_path %>
