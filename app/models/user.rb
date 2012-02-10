@@ -10,11 +10,11 @@ class User < ActiveRecord::Base
   # Setup accessible (or protected) attributes for your model
   attr_accessible :email, :password, :password_confirmation, :remember_me
   
-  def can?(action, resource)
-    roles.includes(:rights).for(action, resource).any? or roles.one? {|rl| rl.admin?}
+  def authorized_for?(action, resource)
+    roles.includes(:rights).for(action, resource).any? or roles.any? {|rl| rl.admin?}
   end
   
-  def has_role?(rolename)
-    roles.one? {|rl| rl.admin? or rl.role_name == rolename}
+  def in_role?(rolename)
+    roles.any? {|rl| rl.admin? or rl.role_name == rolename}
   end
 end
