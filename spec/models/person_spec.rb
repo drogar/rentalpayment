@@ -6,12 +6,15 @@ describe Person do
       @person = Person.new
     end
     context "must not be empty" do
-      specify {@person.should_not be_valid; @person.errors[:email].should_not be_empty}
-      specify {@person.should_not be_valid; @person.errors[:first_name].should_not be_empty}
-      specify {@person.should_not be_valid; @person.errors[:last_name].should_not be_empty}
-      specify {@person.should_not be_valid; @person.errors[:city].should_not be_empty}
-      specify {@person.should_not be_valid; @person.errors[:postal_code].should_not be_empty}
-      specify {@person.should_not be_valid; @person.errors[:country].should_not be_empty}
+      before(:each) do
+        @person.should_not be_valid
+      end
+      specify {@person.errors[:email].should_not be_empty}
+      specify {@person.errors[:first_name].should_not be_empty}
+      specify {@person.errors[:last_name].should_not be_empty}
+      specify {@person.errors[:city].should_not be_empty}
+      specify {@person.errors[:postal_code].should_not be_empty}
+      specify {@person.errors[:country].should_not be_empty}
     end
     context "Countries must be in a valid list" do
       it "allows any country from Person::COUNTRIES" do

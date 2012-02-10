@@ -6,8 +6,11 @@ describe Right do
       @right = Right.new
     end
     context "must not be empty" do
-      specify {@right.should_not be_valid; @right.errors[:resource].should_not be_empty}
-      specify {@right.should_not be_valid; @right.errors[:operation].should_not be_empty}
+      before(:each) do
+        @right.should_not be_valid
+      end
+      specify {@right.errors[:resource].should_not be_empty}
+      specify {@right.errors[:operation].should_not be_empty}
     end
     context "Operations must be in the valid list" do
       it "should allow rights in OPERATIONS_MAPPINGS" do

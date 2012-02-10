@@ -5,65 +5,35 @@ describe Salutation do
     before(:each) do
       @sal = Salutation.new   
     end
-    
-    it "must not allow the salutation to be empty" do
-       @sal.should_not be_valid
-       @sal.errors[:salutation].should_not be_empty
-    end
-    
-    
-    it "must not allow the language to be empty" do
-      @sal.should_not be_valid
-       @sal.errors[:language].should_not be_empty
-    end
-    
-    it "must not all the display order to be empty" do
-      @sal.should_not be_valid
-      @sal.errors[:display_order].should_not be_empty
-    end
-    
-    it "must not allow a language not in the valid list" do
-      @sal.language = 'INVALID LANG'
-      @sal.should_not be_valid
-      @sal.errors[:language].should_not be_empty
-    end  
-       
-    it "must allow any language in the valid list" do
-      Salutation::LANGUAGES.each do |l|
-         @sal.language = l
-         @sal.should_not be_valid
-         @sal.errors[:language].should be_empty
-      end
-    end
-    
-    context "display order range restriction" do 
-      it "must not be negative" do
-        @sal.display_order = -5
+    context "required fields must not be empty" do
+      before(:each) do
         @sal.should_not be_valid
-        @sal.invalid?
-        @sal.errors[:display_order].should_not be_empty
       end
-      
-      it "must not be zero" do
-        @sal.display_order = 0
-        @sal.invalid?
-        @sal.errors[:display_order].should_not be_empty
+      specify {@sal.errors[:salutation].should_not be_empty}  
+      specify {@sal.errors[:language].should_not be_empty}
+      specify {@sal.errors[:display_order].should_not be_empty}
+    end
+    context "Languages must be in the valid list" do
+      it "must not allow a language not in the valid list" do
+        @sal.language = 'INVALID LANG'
+        @sal.should_not be_valid
+        @sal.errors[:language].should_not be_empty
+      end  
+        
+      it "must allow any language in the valid list" do
+        Salutation::LANGUAGES.each do |l|
+           @sal.language = l
+           @sal.should_not be_valid
+           @sal.errors[:language].should be_empty
+        end
       end
-      
-      it "is allowed to be 1" do
-        @sal.display_order = 1
-        @sal.invalid?
-        @sal.errors[:display_order].should be_empty
-      end
-      
-      it "is allowed to be large" do
-        @sal.display_order = 55000
-        @sal.invalid?
-        @sal.errors[:display_order].should be_empty
-      end
-      
     end
   end
+  
+  context "display order range restriction" do 
+    it_behaves_like 'model with display order', Salutation.new      
+  end
+
   context "Selection List of Salutations" do
     before(:each) do
       mr = Factory.create(:salutation)

@@ -6,8 +6,11 @@ describe Role do
       @role = Role.new
     end
     context "must not be empty" do
-      specify {@role.should_not be_valid; @role.errors[:role_name].should_not be_empty}
-      specify {@role.should_not be_valid; @role.errors[:description].should_not be_empty}
+      before(:each) do
+        @role.should_not be_valid
+      end
+      specify {@role.errors[:role_name].should_not be_empty}
+      specify {@role.errors[:description].should_not be_empty}
     end
   end
   context "should only say 'Administrator' is an admin" do
